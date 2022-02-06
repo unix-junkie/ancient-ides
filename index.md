@@ -9,7 +9,9 @@
     - [Borland C++ 3](#borland-c-3)
     - [Borland C++ 4](#borland-c-4)
     - [Borland C++ 5](#borland-c-5)
-      * [Поддержка Java в Borland C++](#поддержка-java-в-borland-c)
+      * [Установка](#установка-borland-c-5)
+      * [Редактор кода](#редактор-кода-в-borland-c-5)
+      * [Поддержка Java](#поддержка-java-в-borland-c)
 
 
 ## Продукты компании Borland
