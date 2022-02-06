@@ -4,6 +4,8 @@
 
 1. [Продукты компании Borland](#продукты-компании-borland)
     - [Borland Pascal](#borland-pascal)
+      * [Компилятор](#компилятор)
+      * [Редактор кода](#редактор-кода)
     - [Borland C++ 3](#borland-c-3)
     - [Borland C++ 4](#borland-c-4)
     - [Borland C++ 5](#borland-c-5)
@@ -22,7 +24,7 @@
 
 ![](borland/pascal/7/bpw-target-selection.png)
 
-Вот так -- ровно тот же самый выбор в DOS-версии:
+Вот так &mdash; ровно тот же самый выбор в DOS-версии:
 
 ![](borland/pascal/7/bp-dpmi-0.png)
 
@@ -30,6 +32,56 @@
 [DPMI-сервера](https://ru.wikipedia.org/wiki/DPMI)
 (также известного как [DOS-расширитель](https://ru.wikipedia.org/wiki/%D0%A0%D0%B0%D1%81%D1%88%D0%B8%D1%80%D0%B8%D1%82%D0%B5%D0%BB%D1%8C_DOS))
 `rtm.exe`, который входит в поставку среды разработки.
+
+Конструкция вида
+
+```pascal
+uses
+{$IFDEF DPMI}
+  Crt, DOS, Graph, WinAPI;
+{$ELSE}
+  Crt, DOS, Graph;
+{$ENDIF}
+```
+
+&mdash; это аналог директив препроцессора, направленных на условную компиляцию, в языках C и C++ (`#ifdef ... #else ... #endif`).
+Символ `DPMI` автоматически устанавливается в непустое значение при выборе _Protected mode Application_:
+
+![](borland/pascal/7/bp-dpmi-1.png)
+
+Поскольку DOS-приложение, использующее DPMI-сервер, имеет возможность использовать часть системных вызовов Windows,
+мы дополнительно включаем стандартный модуль `WinAPI`.
+
+#### Компилятор
+
+Компилятор может генерировать лишь 16-разрядный код, используя инструкции [80286](https://ru.wikipedia.org/wiki/Intel_80286) &mdash;
+последнего 16-разрядного процессора Intel. Вот настройки компилятора для реального режима DOS:
+
+![](borland/pascal/7/bp-compiler-options-0-real.png)
+
+![](borland/pascal/7/bpw-compiler-options-0-real.png)
+
+Так выглядят настройки компилятора для генерации кода защищённого режима DOS. В отличие от реального режима, поддержки
+[оверлеев](https://ru.wikipedia.org/wiki/Overlay_(%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5))
+уже нет (видимо, потому, что в защищённом режиме уже неактуален пресловутый лимит в 640 кБ).
+
+![](borland/pascal/7/bp-compiler-options-1-protected.png)
+
+![](borland/pascal/7/bpw-compiler-options-1-protected.png)
+
+Наконец, настройки компилятора для Windows-кода:
+
+![](borland/pascal/7/bp-compiler-options-2-windows.png)
+
+![](borland/pascal/7/bpw-compiler-options-2-windows.png)
+
+#### Редактор кода
+
+В редакторе кода, помимо подсветки синтаксиса, доступна навигация по членам модуля (функциям, процедурам, переменным).
+Вот так, например, выглядит редактор непосредственно после перехода к функции `DetectVesa16`. В режиме **S**
+доступна собственно навигация, в режиме **R** &mdash; обратные ссылки на функцию:
+
+![](borland/pascal/7/bp-source-browser-functions.png)
 
 ### Borland C++ 3
 ### Borland C++ 4
