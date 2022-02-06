@@ -123,7 +123,7 @@ uses
 В Windows-версии среды элементы определённых типов можно выборочно включать или исключать из обзора. Вот что будет,
 если мы оставим только функции (**F**) и процедуры (**P**):
 
-![](https://github.com/unix-junkie/ancient-ides/blob/master/borland/pascal/7/bpw-source-browser-1-functions.png)
+![](borland/pascal/7/bpw-source-browser-1-functions.png)
 
 ### Borland C++ 3
 ### Borland C++ 4
