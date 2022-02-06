@@ -1,7 +1,19 @@
 ﻿# Канувшие в Лету: обзор некоторых сред разработки
 
+## Содержание
+
+1. [Продукты компании Borland](#продукты-компании-borland)
+    - [Borland Pascal](#borland-pascal)
+    - [Borland C++ 3](#borland-c-3)
+    - [Borland C++ 4](#borland-c-4)
+    - [Borland C++ 5](#borland-c-5)
+
+
 ## Продукты компании Borland
 
+### Borland Pascal
+### Borland C++ 3
+### Borland C++ 4
 ### Borland C++ 5
 
 Последняя версия продукта &mdash; 5.02, и выпущена она в 1997 году. Это последний из продуктов Borland,
