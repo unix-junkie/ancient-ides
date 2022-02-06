@@ -9,6 +9,7 @@
     - [Borland C++ 3](#borland-c-3)
     - [Borland C++ 4](#borland-c-4)
     - [Borland C++ 5](#borland-c-5)
+      * [Поддержка Java в Borland C++](#поддержка-java-в-borland-c)
 
 
 ## Продукты компании Borland
@@ -128,6 +129,8 @@ uses
 Последняя версия продукта &mdash; 5.02, и выпущена она в 1997 году. Это последний из продуктов Borland,
 позволяющий собирать и отлаживать код для DOS.
 
+#### Установка Borland C++ 5
+
 В сети [циркулирует](https://winworldpc.com/product/borland-c/5x) несколько разных инсталляторов продукта,
 но на поверку результат установки оказывается один и тот же. На компакт-дисках распространялась совместная
 поставка Borland C++ и только вышедшей первой версии [C++ Builder](https://ru.wikipedia.org/wiki/C++_Builder):
@@ -139,6 +142,8 @@ uses
 ![](borland/cxx/5/installer-b.png)
 
 ![](borland/cxx/5/installer-c.png)
+
+#### Редактор кода в Borland C++ 5
 
 Редактор кода на C и C++. Здесь нет ни автодополнения кода (того, что мы теперь называем "[IntelliSense](https://ru.wikipedia.org/wiki/IntelliSense)"),
 ни поддержки нумерации строк, но зато есть уже знакомый нам по _Borland Pascal_ браузер кода,
