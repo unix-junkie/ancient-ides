@@ -53,6 +53,7 @@ prtectd.exe: MS-DOS executable, NE for OS/2 1.x (EXE)
 > 16-bit DPMI unsupported.
 > Loader error (0001): out of memory
 > ```
+> Впрочем, виртуальная DOS-среда в Windows 98 (окно `command.com`) предоставляет и 32-х, и 16-разрядные службы DPMI.
 
 В примере кода на снимке конструкция вида
 
