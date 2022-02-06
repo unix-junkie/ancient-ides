@@ -36,8 +36,8 @@
 
 ```
 $ file *.exe
-real.exe:    MS-DOS executable
-prtectd.exe: MS-DOS executable, NE for OS/2 1.x (EXE)
+real.exe:     MS-DOS executable
+protectd.exe: MS-DOS executable, NE for OS/2 1.x (EXE)
 ```
 
 Формат **NE** &mdash; это [_New Executable_](https://ru.wikipedia.org/wiki/New_Executable), стандартизированный в 1985 году,
